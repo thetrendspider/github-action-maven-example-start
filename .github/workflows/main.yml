@@ -16,7 +16,4 @@ jobs:
         java-version: 14
 
     - name: Build project with Maven
-      run: mvn clean package
-
-    - name: Display WAR filen
-      run: ls target/*.war
+      run: mvn -B package --file pom.xml
